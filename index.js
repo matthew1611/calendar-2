@@ -11,10 +11,14 @@ for (let day = 1; day <= 31; day++) {
   );
 
   const weekend = isWeekend(day);
+
+  let name = '';
+
+  if (day <= 7) {
+    name = `<div class="name">${dayName}</div>`;
+  }
   calendar.insertAdjacentHTML(
     'beforeend',
-    `<div class="day ${
-      weekend ? 'weekend' : ''
-    }"><div class="name">${dayName}</div>${day}</div>`
+    `<div class="day ${weekend ? 'weekend' : ''}">${name}${day}</div>`
   );
 }
