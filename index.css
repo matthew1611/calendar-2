@@ -7,9 +7,12 @@ body {
     margin: 0;
 }
 
-/* #app-calendar{
-
-} */
+#app-calendar{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 100%;
+}
 
 .day {
     border-bottom: 1px solid var(--light-gray);
@@ -33,3 +36,4 @@ body {
     background-color: var(--light-blue);
     color: white;
 }
+
