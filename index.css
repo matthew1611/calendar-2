@@ -1,0 +1,35 @@
+:root{
+    --light-blue: rgb(69, 145, 231);
+    --light-gray: rgb(211, 198, 198);
+}
+
+body {
+    margin: 0;
+}
+
+/* #app-calendar{
+
+} */
+
+.day {
+    border-bottom: 1px solid var(--light-gray);
+    border-right: 1px solid var(--light-gray);
+    text-align: center;
+    padding-top: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 200ms, color 200ms;
+}
+
+.name {
+    padding-bottom: 5px;
+}
+
+.weekend {
+    color: var(--light-blue);
+}
+
+.selected {
+    background-color: var(--light-blue);
+    color: white;
+}
