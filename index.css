@@ -9,9 +9,16 @@ body {
 
 #app-calendar{
     display: grid;
+    border-top-style: solid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(5, 1fr);
     height: 500px;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 20px;
 }
 
 .day {

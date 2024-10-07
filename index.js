@@ -22,3 +22,10 @@ for (let day = 1; day <= 31; day++) {
     `<div class="day ${weekend ? 'weekend' : ''}">${name}${day}</div>`
   );
 }
+
+document.querySelectorAll('#app-calendar .day').forEach((day) => {
+  day.addEventListener('click', (event) => {
+    event.currentTarget.classList.toggle('selected');
+    console.log(day.textContent);
+  });
+});
